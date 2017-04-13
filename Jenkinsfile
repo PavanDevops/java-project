@@ -18,13 +18,13 @@ pipeline {
 
       steps {
         script {
-          def myLib = new linuxacademy.git.gitStuff();
+          //def myLib = new linuxacademy.git.gitStuff();
 
           echo "${env.WORKSPACE}/.git"
           
-          echo myLib.gitInfo("${env.WORKSPACE}/.git", 'branch')
+          //echo myLib.gitInfo("${env.WORKSPACE}/.git", 'branch')
 
-          echo myLib.gitInfo("${env.WORKSPACE}/.git", 'commit')
+          //echo myLib.gitInfo("${env.WORKSPACE}/.git", 'commit')
         }
       }
     }
@@ -35,9 +35,10 @@ pipeline {
         echo "My Branch Name: ${env.BRANCH_NAME}"
 
         script {
-          def myLib = new linuxacademy.git.gitStuff();
+          //def myLib = new linuxacademy.git.gitStuff();
 
-          echo "My Commit: ${myLib.gitCommit("${env.WORKSPACE}/.git")}"
+          //echo "My Commit: ${myLib.gitCommit("${env.WORKSPACE}/.git")}"
+          echo "Hello Pavan"
         }
       }
     }
